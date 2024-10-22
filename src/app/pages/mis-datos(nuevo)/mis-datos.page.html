@@ -1,0 +1,12 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>mis-datos</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-input [(ngModel)]="usuario.nombre" label="Nombre"></ion-input>
+  <ion-button (click)="guardar">  
+    Guardar
+  </ion-button>
+</ion-content>

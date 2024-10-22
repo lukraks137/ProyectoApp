@@ -1,0 +1,31 @@
+<app-header></app-header>
+
+<ion-content [fullscreen]="true">
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title size="large">inicio</ion-title>
+    </ion-toolbar>
+  </ion-header>
+</ion-content>
+
+
+  <ion-content [fullscreen]="true">
+  <ol>
+    <li ngFor="let usuario of listaUsuarios">
+      {{ usuario.nombre }} {{ usuario.apellido }}
+    </li>
+  </ol>
+
+  <ion-button (click)="crearUsuario()">
+    Crear usuario nuevo
+  </ion-button>
+
+  <ol>
+    <li *ngFor="let p of publicaciones">
+      {{ p.title }}
+    </li>
+  </ol>
+</ion-content>
+
+
+<app-footer></app-footer>

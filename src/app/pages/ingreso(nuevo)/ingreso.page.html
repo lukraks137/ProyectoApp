@@ -1,0 +1,15 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>Asistencia DUOC</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+  <ion-input label="Cuenta" [(ngModel)]="cuenta"></ion-input>
+  <ion-input label="Contraseña" [(ngModel)]="password"></ion-input>
+  <ion-input (click)="iniciarSesion()">
+    Iniciar sesión
+  </ion-input>
+
+</ion-content>
